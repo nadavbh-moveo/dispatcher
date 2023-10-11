@@ -1,0 +1,25 @@
+button {
+  display: flex;
+  padding: 0px 16px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  border: none;
+  transition: opacity ease-in-out 200ms;
+  cursor: pointer;
+  &.primary {
+    background-color: $main-blue;
+    color: $grayscale-white;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  &.secondary {
+    background-color: $main-gray;
+    color: $dark-text;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
