@@ -1,8 +1,9 @@
 button {
   display: flex;
-  padding: 0px 16px;
+  padding: 8px 16px;
   justify-content: center;
   align-items: center;
+  gap: 5px;
   border-radius: 20px;
   border: none;
   transition: opacity ease-in-out 200ms;
