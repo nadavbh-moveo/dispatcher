@@ -1,0 +1,14 @@
+.top-navbar {    
+    display: flex;
+    height: 74px;
+    background-color: $dark-purple;
+    padding-inline: 20px;
+    .actions {
+        display: flex;
+        align-items: center;
+    }
+    .app-logo {
+        margin-right: 250px;
+        max-height: 50px;
+    }
+}

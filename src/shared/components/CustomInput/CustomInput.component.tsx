@@ -1,4 +1,6 @@
+import { InputAdornment } from "@mui/material";
 import TextField from "@mui/material/TextField";
+import SearchIcon from '@mui/icons-material/Search';
 
 export enum INPUT_TYPE {
   SEARCH = "search",
@@ -7,7 +9,7 @@ export enum INPUT_TYPE {
 }
 
 interface ICustomInputFieldProps {
-  label: string;
+  label?: string;
   value: string;
   onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
   type?: INPUT_TYPE;
@@ -18,13 +20,20 @@ const CustomInput = ({ label, value, onChange, type, customStyles }: ICustomInpu
   return (
     <div className="input-wrapper">
       <TextField
-        label={label}
         type={type}
         variant="outlined"
         value={value}
         onChange={onChange}
         sx={customStyles}
         autoComplete="off"
+        placeholder="Search"
+        InputProps={type === INPUT_TYPE.SEARCH? {
+          startAdornment: (
+            <InputAdornment position="start">
+              <SearchIcon />
+            </InputAdornment>
+          ),
+        } : undefined}
       />
     </div>
   );

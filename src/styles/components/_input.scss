@@ -1,0 +1,14 @@
+
+.css-1d3z3hw-MuiOutlinedInput-notchedOutline {
+    // all: unset;
+}
+input[type="search"] {
+    background-color: white;
+    border-radius: 10px;
+    min-width: 243px;
+    &::placeholder {
+        color: rgba(90, 90, 137, 0.50);
+    }
+    height: 50px;
+    padding-block: 0;
+}
