@@ -1,2 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&family=Roboto:wght@300;400&display=swap');
+
 @import 'base/variables';
 @import 'components/button';
+@import 'components/card';
+@import 'pages/homepage';
+
+h1,h2,h3,h4,h5 {
+    all: unset;
+}
